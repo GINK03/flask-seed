@@ -16,6 +16,13 @@ def tag():
   base_html = fp.read()
   template = Template(base_html)
   return template.render()
+  
+@app.route('/chartjs')
+def chartjs():
+  fp = open('htmls/chartjs-challenge.html')
+  base_html = fp.read()
+  template = Template(base_html)
+  return template.render()
 
 
 if __name__ == '__main__':
