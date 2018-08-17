@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> タグ一覧</title>
+        <title> タグを含むコンテンツすべて</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="static_folder/00.css">
         <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
@@ -17,8 +17,14 @@
     </head>
     <body>
         
-        <h1> Tag一覧 </h1>
+        <h1> タグを含むコンテンツすべて </h1>
         
+        <ul>
+          {% for item in items %}
+            <li><img width="200px" src="{{ item.img }}">  <a href="{{ item.ref }}">{{ item.h2 }}</a></li>
+          {% endfor %}
+        </ul>
+
         <p>
             Web デザインを認識する最新のオープンソースエディター、Brackets をご利用いただき、ありがとうございます。軽量でありながらパワフルなコードエディターでのビジュアルツールとエディターとの融合により、必要なときに必要なだけのサポートを利用することができます。
         </p>

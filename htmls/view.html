@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title> タグ一覧</title>
+        <meta name="description" content="An interactive getting started guide for Brackets.">
+        <link rel="stylesheet" href="static_folder/00.css">
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-auth.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-database.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-firestore.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-messaging.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-functions.js"></script>
+        <script src="https://www.gstatic.com/firebasejs/5.3.1/firebase.js"></script>
+    </head>
+    <body>
+        
+        <h1> {{ item.h2 }} </h1>
+        
+        <ul>
+          {% for img in item.imgs %}
+            <li><img width="750px" src="{{ img }}"></li>
+            
+          {% endfor %}
+        </ul>
+
+        <p>
+            Web デザインを認識する最新のオープンソースエディター、Brackets をご利用いただき、ありがとうございます。軽量でありながらパワフルなコードエディターでのビジュアルツールとエディターとの融合により、必要なときに必要なだけのサポートを利用することができます。
+        </p>
+        
+<script>
+
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyDMGRnn2gq3my_1c1aNjCo8JxJCA5S7zMg",
+    authDomain: "wild-yukikaze.firebaseapp.com",
+    databaseURL: "https://wild-yukikaze.firebaseio.com",
+    projectId: "wild-yukikaze",
+    storageBucket: "wild-yukikaze.appspot.com",
+    messagingSenderId: "779205869653"
+  };
+  firebase.initializeApp(config);
+</script>
+    </body>
+</html>
+<!--
+
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[     CODE THE WEB     ]:::::]
+    [:::::[  http://brackets.io  ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [:::::[                      ]:::::]
+    [::::::[[[[[[[:      :]]]]]]]::::::]
+    [::::::::::::::      ::::::::::::::]
+    [::::::::::::::      ::::::::::::::]
+    [[[[[[[[[[[[[[[      ]]]]]]]]]]]]]]]
+
+-->
+
