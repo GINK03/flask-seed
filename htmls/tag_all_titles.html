@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title> タグを含むコンテンツすべて</title>
+        <title> {{ tag }}を含むコンテンツすべて</title>
         <meta name="description" content="An interactive getting started guide for Brackets.">
         <link rel="stylesheet" href="static_folder/00.css">
         <script src="https://www.gstatic.com/firebasejs/4.12.1/firebase-app.js"></script>
@@ -17,7 +17,7 @@
     </head>
     <body>
         
-        <h1> タグを含むコンテンツすべて </h1>
+        <h1> {{ tag }}タグを含むコンテンツすべて </h1>
         
         <ul>
           {% for item in items %}

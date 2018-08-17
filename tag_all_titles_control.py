@@ -23,5 +23,5 @@ def tag_all_titles(tag=None):
   fp = open('htmls/tag_all_titles.html')
   base_html = fp.read()
   template = Template(base_html)
-  return template.render(name="hoge", items=items)
+  return template.render(tag=tag, items=items)
   
